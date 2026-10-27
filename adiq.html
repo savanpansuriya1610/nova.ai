@@ -1,0 +1,789 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <title>AD IQ Case Study | Marketing Analytics & AI Automation</title>
+    <meta name="title" content="AD IQ Case Study | Marketing Analytics & AI Automation">
+    <meta name="description" content="Discover how AD IQ unifies Shopify, Google Ads, GA4, and Clarity data using BigQuery, n8n, and Laravel to deliver automated marketing insights and reporting." />
+    <link rel="canonical" href="https://www.thenovaai.com/portfolio/adiq">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" sizes="32x32" href="../assets/images/favicon.svg">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- ===== Header Section ===== -->
+<header class="site-header" style="background-color: #000;">
+    <div class="site-header__inner">
+        <div class="site-header__left">
+            <a class="site-header__brand" href="/">
+                <img src="/assets/images/logo.svg" alt="The Nova AI" class="img-fluid" loading="eager" fetchpriority="high">
+            </a>
+            <nav class="site-header__nav" aria-label="Main navigation">
+                <ul class="site-header__menu">
+                    <li class="site-header__item">
+                        <a href="/service">
+                            Services
+                            <span>
+                                <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.8428 0.189887C12.083 -0.0578814 12.4791 -0.0639525 12.727 0.176214C12.9747 0.416432 12.9808 0.812482 12.7407 1.06033L8.57872 5.3533C8.30615 5.64206 7.9783 5.87278 7.61371 6.03006C7.24907 6.1873 6.85575 6.26932 6.45844 6.26932C6.06112 6.26932 5.66784 6.18726 5.30316 6.03006C4.93851 5.87275 4.60955 5.64315 4.33702 5.35444L0.176214 1.06033C-0.0639527 0.812482 -0.0578813 0.416432 0.189887 0.176214C0.437733 -0.0639524 0.833783 -0.0578811 1.074 0.189887L5.2405 4.4897L5.2462 4.49653C5.40204 4.66158 5.59051 4.79295 5.79878 4.88276C6.00729 4.97257 6.23177 5.01833 6.45844 5.01833C6.68516 5.01833 6.90969 4.97258 7.11811 4.88276C7.32643 4.79292 7.51488 4.66153 7.67068 4.49653L7.67637 4.4897L11.8428 0.189887Z"
+                                        fill="#CBCBCB" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/llm-integration">LLM Integration</a>
+                            </li>
+                            <li>
+                                <a href="/predictive-analytics">Predictive Analytics</a>
+                            </li>
+                            <li>
+                                <a href="/ai-strategy-audit">AI Strategy & Audit</a>
+                            </li>
+                            <li>
+                                <a href="/ai-agent-development">AI Agent Development</a>
+                            </li>
+                            <li>
+                                <a href="/custom-model-training">Custom Model Training</a>
+                            </li>
+                            <li>
+                                <a href="/computer-vision">Computer Vision</a>
+                            </li>
+                            <li>
+                                <a href="/ai-chatbot-development">AI Chatbot Development</a>
+                            </li>
+                            <li>
+                                <a href="/virtual-assistant-services">Virtual Assistant Services</a>
+                            </li>
+                            <li>
+                                <a href="/voice-user-interface">Voice User Interface</a>
+                            </li>
+                            <li>
+                                <a href="/ai-content-generator">AI Content Generator</a>
+                            </li>
+                            <li>
+                                <a href="/virtual-research-assistant">Virtual Research Assistant</a>
+                            </li>
+                            <li>
+                                <a href="/ai-language-translator">AI Language Translator</a>
+                            </li>
+                            <li>
+                                <a href="/predictive-maintenance-solutions">Predictive Maintenance</a>
+                            </li>
+                            <li>
+                                <a href="/automated-machine-learning">Automated Machine Learning</a>
+                            </li>
+                            <li>
+                                <a href="/fraud-detection">Fraud Detection</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-header__item"><a href="/portfolio/">Portfolio</a></li>
+                    <li class="site-header__item"><a href="/about-us">About</a></li>
+                    <li class="site-header__item"><a href="/tech">Tech</a></li>
+                    <li class="site-header__item"><a href="/contact-us">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="site-cta">
+            <a href="javascript:;" class="actions-btn">
+                <span>Start a Project</span>
+                <span class="site-cta__arrow">
+                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.353516 7.87629L4.35352 3.87629L0.353515 0.376289" stroke="white" />
+                        <path d="M5.85352 7.87629L9.85352 3.87629L5.85352 0.376289" stroke="white" />
+                    </svg>
+                </span>
+            </a>
+            <button class="site-header__toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <!-- ===== Portfolio Banner Section ===== -->
+
+    <section class="new-portfolio-banner">
+        <div class="new-portfolio-banner-image">
+            <img src="../assets/images/how-ai-agents-are-transforming-automation.png"
+                alt="how-ai-agents-are-transforming-automation">
+        </div>
+        <div class="container">
+            <div class="new-portfolio-banner-inner">
+                <div class="new-portfolio-banner-content-col">
+                    <div class="new-portfolio-banner-content-col-inner">
+                        <div class="breadcurmb-main">
+                            <div class="breadcurmb-inner">
+                                <ul>
+                                    <li class="breadcurmb-item">
+                                        <a href="../">Home</a>
+                                    </li>
+
+                                    <li class="breadcurmb-item">
+                                        <a href="../portfolio">Portfolio</a>
+                                    </li>
+
+                                    <li class="breadcurmb-item">
+                                        AD IQ
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="new-portfolio-banner-title">
+                            <h1><span>AdIQ</span> AI-Driven Marketing Intelligence Platform</h1>
+                            <p>How we replaced fragmented, manual marketing management with a unified BigQuery data warehouse, 8+ automated pipelines, and a real-time dashboard — laying the data foundation for a full AI execution engine targeting ROAS ≥ 4.0 across Google Ads, SEO, and CRO.</p>
+                        </div>
+
+                        <div class="new-portfolio-usp">
+                            <div class="new-portfolio-usp-inner">
+                                <div class="new-portfolio-usp-box">
+                                    <div class="new-portfolio-usp-box-inner">
+                                        <div class="new-portfolio-usp-icon">
+                                            <svg fill="#ff6801" width="800px" height="800px" viewBox="0 0 256 256"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M144.282 145.51A32.19 32.19 0 0 1 150 145c4.032 0 7.89.746 11.444 2.107L175.584 127l.54.306A31.88 31.88 0 0 1 168 106c0-17.673 14.327-32 32-32 17.673 0 32 14.327 32 32 0 17.673-14.327 32-32 32-3.672 0-7.2-.619-10.485-1.757l-14.31 21.038A31.863 31.863 0 0 1 182 177c0 17.673-14.327 32-32 32-17.673 0-32-14.327-32-32 0-9.767 4.376-18.512 11.274-24.382l-20.764-41.28A32.14 32.14 0 0 1 102 112a32.05 32.05 0 0 1-8.16-1.05l-14.716 25.93C85.21 142.705 89 150.91 89 160c0 17.673-14.327 32-32 32-17.673 0-32-14.327-32-32 0-17.673 14.327-32 32-32 2.655 0 5.234.323 7.7.932l14.809-26.17C73.638 96.963 70 88.907 70 80c0-17.673 14.327-32 32-32 17.673 0 32 14.327 32 32 0 9.563-4.195 18.146-10.844 24.01l21.126 41.5zM200 122c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM57 176c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zm45-80c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zm48 97c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16z"
+                                                    fill-rule="evenodd" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="new-portfolio-usp-content">
+                                            <h3>End-to-End Automation</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="new-portfolio-usp-box">
+                                    <div class="new-portfolio-usp-box-inner">
+                                        <div class="new-portfolio-usp-icon">
+                                            <svg fill="#ff6801" height="800px" width="800px" version="1.1" id="Jury"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128"
+                                                xml:space="preserve">
+                                                <circle id="_x34__6_" cx="30" cy="39.6" r="6.6" />
+                                                <path id="_x32__11_"
+                                                    d="M44,61v-4.9c0-4.5-3.7-8.2-8.2-8.2H24.2c-4.5,0-8.2,3.7-8.2,8.2V61H44z" />
+                                                <circle id="_x34__7_" cx="64" cy="39.6" r="6.6" />
+                                                <path id="_x32__12_"
+                                                    d="M78,61v-4.9c0-4.5-3.7-8.2-8.2-8.2H58.2c-4.5,0-8.2,3.7-8.2,8.2V61H78z" />
+                                                <circle id="_x34__8_" cx="98" cy="39.6" r="6.6" />
+                                                <path id="_x32__13_"
+                                                    d="M112,61v-4.9c0-4.5-3.7-8.2-8.2-8.2H92.2c-4.5,0-8.2,3.7-8.2,8.2V61H112z" />
+                                                <path id="_x33__11_"
+                                                    d="M8,65v7.9h8V120h96V72.9h8V65H8z M84.5,98.3c-1.6,2.7-4.5,4.6-7.9,4.6s-6.3-1.8-7.9-4.6l0,0l0,0l0,0l0,0 l6.6-11.4H65.1v20.6h8l4.6,4.6H50.3l4.6-4.6h8V86.9H52.8l6.6,11.4l0,0l0,0c-1.6,2.7-4.5,4.6-7.9,4.6s-6.3-1.8-7.9-4.6l0,0l0,0l0,0 l0,0l7.9-13.7l0,0h11.4V76h2.3v8.6h11.4l0,0L84.5,98.3L84.5,98.3L84.5,98.3z" />
+                                                <polygon id="_x32__19_" points="71.3,98.3 81.8,98.3 76.5,89.2 " />
+                                                <polygon id="_x31__8_" points="46.2,98.3 56.6,98.3 51.4,89.2 " />
+                                            </svg>
+                                        </div>
+
+                                        <div class="new-portfolio-usp-content">
+                                            <h3>Faster Process Execution</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="new-portfolio-usp-box">
+                                    <div class="new-portfolio-usp-box-inner">
+                                        <div class="new-portfolio-usp-icon">
+                                            <svg fill="#ff6801" version="1.1" id="Capa_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px"
+                                                viewBox="0 0 87.883 87.883" xml:space="preserve">
+                                                <g>
+                                                    <path
+                                                        d="M2.149,41.921L26.134,1.064C26.517,0.408,27.258,0,28.065,0s1.548,0.408,1.93,1.063l16.294,27.756l-2.253,1.174 L31.128,7.226c-0.467-0.793-1.365-1.229-2.276-1.1c-0.911,0.127-1.656,0.791-1.887,1.682l-8.917,36.109 c-0.174,0.599-0.094,1.243,0.221,1.78c0.315,0.539,0.837,0.925,1.445,1.068c2.873,0.672,5.839,1.014,8.814,1.014h0.001 c0.305,0,0.606-0.006,0.906-0.012l0.014,2.904c-0.641,0.023-1.287,0.039-1.944,0.039h-0.003c-8.638,0-16.882-2.029-24.507-6.033 c-0.518-0.273-0.888-0.717-1.04-1.254C1.808,42.916,1.878,42.382,2.149,41.921z M33.137,41.537 c0.002-0.414,0.235-0.793,0.605-0.979l25.186-13.129c0.289-0.145,0.625-0.156,0.923-0.031l25.48,12.34 c0.021,0.01,0.038,0.025,0.061,0.037c0.024,0.012,0.052,0.018,0.075,0.033c0.025,0.014,0.044,0.035,0.068,0.053 c0.037,0.025,0.071,0.051,0.104,0.082c0.041,0.037,0.077,0.076,0.111,0.119c0.027,0.033,0.054,0.066,0.078,0.104 c0.03,0.047,0.053,0.098,0.076,0.148c0.017,0.039,0.035,0.076,0.047,0.115c0.018,0.059,0.025,0.117,0.034,0.178 c0.004,0.031,0.016,0.061,0.017,0.092c0,0.008-0.002,0.016-0.002,0.023c0,0.01,0.003,0.02,0.003,0.029v32.621 c0,0.403-0.222,0.774-0.577,0.969L60.7,87.75c-0.163,0.088-0.343,0.133-0.523,0.133c-0.194,0-0.39-0.053-0.562-0.156 c-0.102-0.061-0.187-0.139-0.261-0.225c0,0-0.001,0-0.002,0c-0.18,0-0.358-0.045-0.521-0.131L33.787,74.257 c-0.354-0.188-0.576-0.562-0.579-0.963l-0.145-31.353c0-0.135,0.032-0.264,0.078-0.387C33.14,41.548,33.137,41.543,33.137,41.537z M61.276,84.939l22.526-12.224V42.595L61.276,55.184V84.939z M60.164,53.285l22.197-12.412l-22.898-11.25l-22.804,11.93 L60.164,53.285z M47.608,12.025c0,0.4,0.156,0.777,0.438,1.061l3.667,3.667c0.566,0.566,1.556,0.566,2.121,0 c0.283-0.283,0.439-0.66,0.439-1.061s-0.156-0.777-0.439-1.061l-1.386-1.386c0.903-0.106,1.796-0.16,2.668-0.16 c13.504,0,19.396,12.754,19.454,12.883c0.241,0.539,0.779,0.888,1.37,0.888c0.213,0,0.419-0.044,0.611-0.131 c0.754-0.337,1.095-1.226,0.758-1.98c-0.066-0.148-6.776-14.652-22.19-14.652c-0.671,0-1.354,0.028-2.042,0.083l0.757-0.757 c0.283-0.283,0.439-0.66,0.439-1.061s-0.156-0.777-0.439-1.061c-0.565-0.566-1.555-0.566-2.121,0l-3.667,3.667 C47.765,11.248,47.608,11.625,47.608,12.025z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+
+                                        <div class="new-portfolio-usp-content">
+                                            <h3>Improved Operational Efficiency</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Project Overview Section ===== -->
+
+    <section class="project-overview-main-sec bg-white p-150">
+        <div class="container">
+            <div class="project-overview-inner-sec">
+                <div class="project-overview-desctiption-col">
+                    <div class="project-overview-desctiption-col-inner">
+                        <h2>Project Overview</h2>
+                        <p>The client — a Shopify-based e-commerce business selling across European markets — was managing Google Ads, SEO, and conversion rate optimisation entirely through manual processes spread across four disconnected tools. Revenue data lived in Shopify. Ad spend lived in Google Ads. Behavioural funnel data sat in GA4. UX signals were buried in Microsoft Clarity. None of these platforms talked to each other.</p>
+                        <p>Without a unified data layer, the team had no way to answer the most important question in performance marketing: which campaigns, keywords, and landing pages are actually driving profitable revenue — and which are silently burning budget?</p>
+                    </div>
+                </div>
+
+                <div class="project-overview-listing-col">
+                    <ul>
+                        <li>
+                            <p>Four Siloed Data Sources</p>
+                        </li>
+
+                        <li>
+                            <p>No Unified ROAS View</p>
+                        </li>
+
+                        <li>
+                            <p>Reactive, Weekly Reporting</p>
+                        </li>
+
+                        <li>
+                            <p>No Data Infrastructure for AI</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Project Slider Section ===== -->
+
+    <section class="architecture-main-sec new-sec bg-black p-150">
+        <div class="container">
+            <div class="architecture-inner-sec">
+                <div class="title">
+                    <div class="sub-title">
+                        <span>Architecture</span>
+                    </div>
+                    <h2>End to End Pipeline</h2>
+                </div>
+
+                <div class="architecture-item-row">
+                    <div class="architecture-item">
+                        <div class="architecture-item-inner">
+                            <div class="architecture-item-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M5 12.4004V16.0004C5 19.4004 9.8 22.0004 16 22.0004C22.2 22.0004 27 19.4004 27 16.0004V12.4004C24.8 14.6004 20.8 16.0004 16 16.0004C11.2 16.0004 7.2 14.6004 5 12.4004Z" fill="white"/> <path d="M5 20.4004V24.0004C5 27.4004 9.8 30.0004 16 30.0004C22.2 30.0004 27 27.4004 27 24.0004V20.4004C24.8 22.6004 20.8 24.0004 16 24.0004C11.2 24.0004 7.2 22.6004 5 20.4004Z" fill="white"/> <path d="M16 14C22.0751 14 27 11.3137 27 8C27 4.68629 22.0751 2 16 2C9.92487 2 5 4.68629 5 8C5 11.3137 9.92487 14 16 14Z" fill="white"/> </svg>
+                            </div>
+
+                            <div class="architecture-item-description">
+                                <h3>4 Data Sources</h3>
+                                <p>Shopify · Ads · GA4 · Clarity</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="architecture-item">
+                        <div class="architecture-item-inner">
+                            <div class="architecture-item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path d="M458.1 229.1c-25.1 0-46.2-17.2-52.2-40.4h-61.8c-13.2 0-24.4 9.5-26.6 22.5l-2.2 13.3c-2 12.2-8.2 23.4-17.5 31.6 9.3 8.2 15.5 19.3 17.5 31.6l2.2 13.3c2.2 13 13.4 22.5 26.6 22.5h7.9c6-23.2 27.1-40.4 52.2-40.4 29.8 0 53.9 24.1 53.9 53.9s-24.1 53.9-53.9 53.9c-25.1 0-46.2-17.2-52.2-40.4h-7.9c-26.3 0-48.8-19-53.2-45l-2.2-13.3c-2.2-13-13.4-22.5-26.6-22.5h-21.4c-6 23.2-27.1 40.4-52.2 40.4s-46.2-17.2-52.2-40.4H106c-6 23.2-27.1 40.4-52.2 40.4C24.1 309.9 0 285.8 0 256s24.1-53.9 53.9-53.9c25.1 0 46.2 17.2 52.2 40.4h30.3c6-23.2 27.1-40.4 52.2-40.4s46.2 17.2 52.2 40.4h21.4c13.2 0 24.4-9.5 26.6-22.5l2.2-13.3c4.3-26 26.8-45 53.2-45H406c6-23.2 27.1-40.4 52.2-40.4 29.8 0 53.9 24.1 53.9 53.9s-24.2 53.9-54 53.9m0-27c14.9 0 26.9-12.1 26.9-26.9s-12.1-26.9-26.9-26.9-26.9 12.1-26.9 26.9 12 26.9 26.9 26.9M53.9 282.9c14.9 0 26.9-12.1 26.9-26.9s-12.1-26.9-26.9-26.9-27 12-27 26.9 12.1 26.9 27 26.9M215.6 256c0 14.9-12.1 26.9-26.9 26.9s-26.9-12.1-26.9-26.9 12.1-26.9 26.9-26.9 26.9 12 26.9 26.9m215.6 80.8c0 14.9-12.1 26.9-26.9 26.9-14.9 0-26.9-12.1-26.9-26.9s12.1-26.9 26.9-26.9 26.9 12.1 26.9 26.9" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"/></svg>
+                            </div>
+
+                            <div class="architecture-item-description">
+                                <h3>n8n Pipelines</h3>
+                                <p>8+ Sync Workflows</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="architecture-item">
+                        <div class="architecture-item-inner">
+                            <div class="architecture-item-icon">
+                                <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <g filter="url(#filter0_d_5981_1097)"> <path d="M18.8841 18.0146H22.2645C23.2257 18.0146 23.8348 17.4852 23.8348 16.6355C23.8348 15.8338 23.2257 15.2563 22.2645 15.2563H18.8841C18.772 15.2563 18.6758 15.3526 18.6758 15.4488V17.8228C18.6916 17.9342 18.772 18.0146 18.8841 18.0146Z" fill="white"/> <path d="M18.8841 23.4836H22.3766C23.4498 23.4836 24.0912 22.9384 24.0912 21.9759C24.0912 21.142 23.4821 20.4683 22.3766 20.4683H18.8841C18.772 20.4683 18.6758 20.5645 18.6758 20.6608V23.2753C18.6916 23.4032 18.772 23.4836 18.8841 23.4836Z" fill="white"/> <path d="M31.2503 2.80913L21.2527 12.7854H22.8869C25.434 12.7854 26.9404 14.3894 26.9404 16.1377C26.9404 17.5168 26.0109 18.5274 25.0181 18.9764C24.8579 19.0403 24.8579 19.2651 25.0339 19.3291C26.1875 19.778 27.0043 20.9811 27.0043 22.3926C27.0043 24.3815 25.6747 25.9689 23.0952 25.9689H16.0139C15.9019 25.9689 15.8056 25.8727 15.8056 25.7764V18.2229L4.83035 29.1617C4.68667 29.3061 4.78223 29.5625 4.99054 29.5625H31.3782C31.4744 29.5625 31.5542 29.4821 31.5542 29.3858V2.95351C31.6023 2.77751 31.3782 2.68126 31.2503 2.80913Z" fill="white"/> </g> <defs> <filter id="filter0_d_5981_1097" x="-2" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dy="4"/> <feGaussianBlur stdDeviation="2"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5981_1097"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5981_1097" result="shape"/> </filter> </defs> </svg>
+                            </div>
+
+                            <div class="architecture-item-description">
+                                <h3>BigQuery</h3>
+                                <p>5-Layer Warehouse</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="architecture-item">
+                        <div class="architecture-item-inner">
+                            <div class="architecture-item-icon">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_1_2046)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6304 6.67146C28.641 6.71078 28.6464 6.75132 28.6465 6.79204V13.122C28.6465 13.2033 28.6251 13.2831 28.5844 13.3534C28.5437 13.4237 28.4851 13.482 28.4146 13.5224L23.1017 16.5813V22.6442C23.1017 22.8092 23.014 22.9615 22.871 23.0445L11.7808 29.4288C11.7554 29.4432 11.7277 29.4524 11.7 29.4622C11.6896 29.4657 11.6798 29.472 11.6688 29.4749C11.5913 29.4953 11.5098 29.4953 11.4323 29.4749C11.4196 29.4715 11.4081 29.4645 11.396 29.4599C11.3706 29.4507 11.344 29.4426 11.3198 29.4288L0.231923 23.0445C0.161485 23.0041 0.102958 22.9458 0.0622411 22.8755C0.0215241 22.8052 5.58112e-05 22.7254 0 22.6442L0 3.65416C0 3.61262 0.00576923 3.57223 0.0161538 3.533C0.0196154 3.51973 0.0276923 3.50762 0.0323077 3.49435C0.0409615 3.47012 0.0490385 3.44531 0.0617308 3.42281C0.0703846 3.40781 0.0830769 3.39569 0.0934615 3.38185C0.106731 3.36339 0.118846 3.34435 0.134423 3.32819C0.147692 3.31493 0.165 3.30512 0.18 3.29358C0.196731 3.27973 0.211731 3.26473 0.230769 3.25377L5.77558 0.0616565C5.84578 0.0212606 5.92535 0 6.00635 0C6.08734 0 6.16691 0.0212606 6.23712 0.0616565L11.7813 3.25377H11.7825C11.801 3.26531 11.8165 3.27973 11.8333 3.293C11.8483 3.30454 11.865 3.31493 11.8783 3.32762C11.8944 3.34435 11.906 3.36339 11.9198 3.38185C11.9296 3.39569 11.9429 3.40781 11.951 3.42281C11.9642 3.44589 11.9717 3.47012 11.981 3.49435C11.9856 3.50762 11.9937 3.51973 11.9971 3.53358C12.0077 3.57289 12.0132 3.61343 12.0133 3.65416V15.5151L16.6333 12.8549V6.79146C16.6333 6.75108 16.639 6.71012 16.6494 6.67146C16.6535 6.65762 16.661 6.6455 16.6656 6.63223C16.6748 6.608 16.6829 6.58319 16.6956 6.56069C16.7042 6.54569 16.7169 6.53358 16.7267 6.51973C16.7406 6.50127 16.7521 6.48223 16.7683 6.46608C16.7815 6.45281 16.7983 6.443 16.8133 6.43146C16.8306 6.41762 16.8456 6.40262 16.864 6.39166L22.4094 3.19954C22.4796 3.15909 22.5592 3.1378 22.6402 3.1378C22.7212 3.1378 22.8008 3.15909 22.871 3.19954L28.4152 6.39166C28.4348 6.4032 28.4498 6.41762 28.4671 6.43089C28.4815 6.44243 28.4983 6.45281 28.5115 6.4655C28.5277 6.48223 28.5392 6.50127 28.5531 6.51973C28.5635 6.53358 28.5762 6.54569 28.5842 6.56069C28.5975 6.58319 28.605 6.608 28.6142 6.63223C28.6194 6.6455 28.6269 6.65762 28.6304 6.67146ZM27.7223 12.8549V7.59108L25.7821 8.708L23.1017 10.2513V15.5151L27.7229 12.8549H27.7223ZM22.1781 22.377V17.1097L19.5415 18.6155L12.0127 22.9124V28.2293L22.1781 22.377ZM0.924231 4.45319V22.377L11.0885 28.2288V22.913L5.77846 19.9078L5.77673 19.9067L5.77442 19.9055C5.75654 19.8951 5.74154 19.8801 5.72481 19.8674C5.71038 19.8559 5.69365 19.8467 5.68096 19.834L5.67981 19.8322C5.66481 19.8178 5.65442 19.7999 5.64173 19.7838C5.63019 19.7682 5.61635 19.7549 5.60712 19.7388L5.60654 19.737C5.59615 19.7197 5.58981 19.699 5.58231 19.6793C5.57481 19.662 5.565 19.6459 5.56038 19.6274C5.55462 19.6055 5.55346 19.5818 5.55115 19.5593C5.54885 19.542 5.54423 19.5247 5.54423 19.5074V19.5063V7.11339L2.86442 5.56954L0.924231 4.45319ZM6.00692 0.995118L1.3875 3.65416L6.00577 6.31319L10.6246 3.65358L6.00577 0.995118H6.00692ZM8.40923 17.5897L11.089 16.047V4.45319L9.14885 5.57012L6.46846 7.11339V18.7072L8.40923 17.5897ZM22.6402 4.133L18.0213 6.79204L22.6402 9.45108L27.2585 6.79146L22.6402 4.133ZM22.1781 10.2513L19.4977 8.708L17.5575 7.59108V12.8549L20.2373 14.3976L22.1781 15.5151V10.2513ZM11.55 22.1134L18.3248 18.2457L21.7113 16.313L17.096 13.6557L11.7819 16.7151L6.93865 19.5034L11.55 22.1134Z" fill="#fff"/> </g> <defs> <clipPath id="clip0_1_2046"> <rect width="28.8462" height="30" fill="white"/> </clipPath> </defs> </svg>
+                            </div>
+
+                            <div class="architecture-item-description">
+                                <h3>Laravel Dashboard</h3>
+                                <p>Real-Time Reports</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="architecture-item">
+                        <div class="architecture-item-inner">
+                            <div class="architecture-item-icon">
+                                <svg width="800px" height="800px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>ai</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="icon" fill="#fff" transform="translate(64.000000, 64.000000)"> <path d="M320,64 L320,320 L64,320 L64,64 L320,64 Z M171.749388,128 L146.817842,128 L99.4840387,256 L121.976629,256 L130.913039,230.977 L187.575039,230.977 L196.319607,256 L220.167172,256 L171.749388,128 Z M260.093778,128 L237.691519,128 L237.691519,256 L260.093778,256 L260.093778,128 Z M159.094727,149.47526 L181.409039,213.333 L137.135039,213.333 L159.094727,149.47526 Z M341.333333,256 L384,256 L384,298.666667 L341.333333,298.666667 L341.333333,256 Z M85.3333333,341.333333 L128,341.333333 L128,384 L85.3333333,384 L85.3333333,341.333333 Z M170.666667,341.333333 L213.333333,341.333333 L213.333333,384 L170.666667,384 L170.666667,341.333333 Z M85.3333333,0 L128,0 L128,42.6666667 L85.3333333,42.6666667 L85.3333333,0 Z M256,341.333333 L298.666667,341.333333 L298.666667,384 L256,384 L256,341.333333 Z M170.666667,0 L213.333333,0 L213.333333,42.6666667 L170.666667,42.6666667 L170.666667,0 Z M256,0 L298.666667,0 L298.666667,42.6666667 L256,42.6666667 L256,0 Z M341.333333,170.666667 L384,170.666667 L384,213.333333 L341.333333,213.333333 L341.333333,170.666667 Z M0,256 L42.6666667,256 L42.6666667,298.666667 L0,298.666667 L0,256 Z M341.333333,85.3333333 L384,85.3333333 L384,128 L341.333333,128 L341.333333,85.3333333 Z M0,170.666667 L42.6666667,170.666667 L42.6666667,213.333333 L0,213.333333 L0,170.666667 Z M0,85.3333333 L42.6666667,85.3333333 L42.6666667,128 L0,128 L0,85.3333333 Z" id="Combined-Shape"> </path> </g> </g> </svg>
+                            </div>
+
+                            <div class="architecture-item-description">
+                                <h3>AI Layer</h3>
+                                <p>Claude + OpenAI (Ph.2)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Technologies Section ===== -->
+
+    <section class="technologies-main-sec bg-white p-150">
+        <div class="container">
+
+            <div class="title">
+                <h2>Technologies Used</h2>
+            </div>
+
+            <div class="technologies-listing-wrapper">
+                <div class="technologies-list-box">
+                    <div class="technologies-list-box-inner">
+                        <div class="technologies-list-box-icon">
+                            <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_1_2219)"> <path d="M21.2815 7.17127L24.0631 4.36264L24.2485 3.18002C19.1796 -1.47385 11.122 -0.946156 6.5526 4.28111C5.28335 5.73294 4.34172 7.54297 3.8396 9.41207L4.83585 9.27033L10.399 8.34405L10.8285 7.90053C13.3031 5.1564 17.4872 4.78722 20.3445 7.12205L21.2815 7.17127Z" fill="#EA4335"/> <path d="M28.0256 9.32955C27.3863 6.95219 26.0736 4.81502 24.2485 3.18018L20.3445 7.12208C21.993 8.48216 22.9321 10.5311 22.8919 12.6801V13.3799C24.8108 13.3799 26.3665 14.9506 26.3665 16.8881C26.3665 18.8257 24.8108 20.3571 22.8919 20.3571H15.933L15.2498 21.106V25.314L15.933 25.9742H22.8919C27.8831 26.0135 31.9609 21.9993 31.9998 16.9595C32.0233 13.9048 30.5316 11.041 28.0256 9.32955Z" fill="#4285F4"/> <path d="M8.98383 25.974H15.933V20.3568H8.98383C8.4887 20.3567 8.0092 20.2493 7.55895 20.0415L6.57308 20.3469L3.77195 23.1556L3.52795 24.1115C5.09883 25.3092 7.01545 25.9826 8.98383 25.974Z" fill="#34A853"/> <path d="M8.98379 7.7525C3.99241 7.78254 -0.029586 11.8926 0.000163983 16.9323C0.016789 19.7466 1.31854 22.3958 3.52791 24.1114L7.55891 20.0414C5.81004 19.2436 5.03291 17.1655 5.82304 15.3998C6.61304 13.6341 8.67129 12.8494 10.4199 13.6471C11.1905 13.9986 11.8077 14.6218 12.1558 15.3998L16.1868 11.3298C14.4717 9.06588 11.8067 7.74228 8.98379 7.7525Z" fill="#FBBC05"/> </g> <defs> <clipPath id="clip0_1_2219"> <rect width="32" height="26" fill="white"/> </clipPath> </defs> </svg>
+                        </div>
+
+                        <div class="technologies-list-box-content">
+                            <p>Google Cloud</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technologies-list-box">
+                    <div class="technologies-list-box-inner">
+                        <div class="technologies-list-box-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M33.1195 7.85453C33.0919 7.65453 32.9167 7.54384 32.7719 7.53165C32.6274 7.5196 29.5688 7.29288 29.5688 7.29288C29.5688 7.29288 27.4445 5.18398 27.2114 4.95055C26.9781 4.71727 26.5225 4.78823 26.3456 4.84028C26.3196 4.84795 25.8815 4.98316 25.1569 5.2074C24.4473 3.16549 23.195 1.28905 20.9918 1.28905C20.931 1.28905 20.8684 1.29151 20.8058 1.29508C20.1792 0.466445 19.403 0.106445 18.7326 0.106445C13.6004 0.106445 11.1485 6.5222 10.3797 9.78247C8.3855 10.4004 6.96879 10.8397 6.78783 10.8966C5.67468 11.2458 5.63947 11.2808 5.49331 12.3297C5.38331 13.1238 2.4707 35.6484 2.4707 35.6484L25.1663 39.9007L37.4636 37.2404C37.4636 37.2404 33.1466 8.05453 33.1195 7.85453ZM23.9025 5.59535L21.9821 6.18973C21.9828 6.05439 21.9834 5.92124 21.9834 5.77562C21.9834 4.50658 21.8073 3.4848 21.5247 2.6748C22.6599 2.81727 23.4159 4.10891 23.9025 5.59535ZM20.1165 2.92645C20.4321 3.71727 20.6373 4.8522 20.6373 6.38371C20.6373 6.46206 20.6366 6.53371 20.6359 6.60617C19.387 6.99302 18.0299 7.41302 16.6697 7.83439C17.4334 4.88699 18.865 3.46343 20.1165 2.92645ZM18.5917 1.48302C18.8132 1.48302 19.0363 1.55823 19.2499 1.70521C17.6051 2.47918 15.8421 4.4285 15.0976 8.32124L11.9625 9.2922C12.8345 6.32302 14.9054 1.48302 18.5917 1.48302Z" fill="#95BF46"/> <path d="M32.7725 7.53145C32.628 7.51939 29.5693 7.29268 29.5693 7.29268C29.5693 7.29268 27.4451 5.18378 27.2119 4.95035C27.1247 4.8635 27.007 4.81898 26.884 4.7998L25.168 39.9002L37.4641 37.2402C37.4641 37.2402 33.1471 8.05433 33.12 7.85433C33.0925 7.65433 32.9173 7.54364 32.7725 7.53145Z" fill="#5E8E3E"/> <path d="M20.9915 14.3267L19.4752 18.8371C19.4752 18.8371 18.1467 18.128 16.5182 18.128C14.1308 18.128 14.0106 19.6263 14.0106 20.0038C14.0106 22.0638 19.3805 22.8531 19.3805 27.6783C19.3805 31.4746 16.9727 33.9191 13.7261 33.9191C9.83022 33.9191 7.83789 31.4945 7.83789 31.4945L8.88104 28.0479C8.88104 28.0479 10.929 29.8061 12.6571 29.8061C13.7862 29.8061 14.2456 28.9171 14.2456 28.2675C14.2456 25.5804 9.84008 25.4605 9.84008 21.045C9.84008 17.3287 12.5075 13.7324 17.8919 13.7324C19.9665 13.7324 20.9915 14.3267 20.9915 14.3267Z" fill="white"/> </svg>
+                        </div>
+
+                        <div class="technologies-list-box-content">
+                            <p>Shopify</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technologies-list-box">
+                    <div class="technologies-list-box-inner">
+                        <div class="technologies-list-box-icon">
+                            <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_1_2046)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6304 6.67146C28.641 6.71078 28.6464 6.75132 28.6465 6.79204V13.122C28.6465 13.2033 28.6251 13.2831 28.5844 13.3534C28.5437 13.4237 28.4851 13.482 28.4146 13.5224L23.1017 16.5813V22.6442C23.1017 22.8092 23.014 22.9615 22.871 23.0445L11.7808 29.4288C11.7554 29.4432 11.7277 29.4524 11.7 29.4622C11.6896 29.4657 11.6798 29.472 11.6688 29.4749C11.5913 29.4953 11.5098 29.4953 11.4323 29.4749C11.4196 29.4715 11.4081 29.4645 11.396 29.4599C11.3706 29.4507 11.344 29.4426 11.3198 29.4288L0.231923 23.0445C0.161485 23.0041 0.102958 22.9458 0.0622411 22.8755C0.0215241 22.8052 5.58112e-05 22.7254 0 22.6442L0 3.65416C0 3.61262 0.00576923 3.57223 0.0161538 3.533C0.0196154 3.51973 0.0276923 3.50762 0.0323077 3.49435C0.0409615 3.47012 0.0490385 3.44531 0.0617308 3.42281C0.0703846 3.40781 0.0830769 3.39569 0.0934615 3.38185C0.106731 3.36339 0.118846 3.34435 0.134423 3.32819C0.147692 3.31493 0.165 3.30512 0.18 3.29358C0.196731 3.27973 0.211731 3.26473 0.230769 3.25377L5.77558 0.0616565C5.84578 0.0212606 5.92535 0 6.00635 0C6.08734 0 6.16691 0.0212606 6.23712 0.0616565L11.7813 3.25377H11.7825C11.801 3.26531 11.8165 3.27973 11.8333 3.293C11.8483 3.30454 11.865 3.31493 11.8783 3.32762C11.8944 3.34435 11.906 3.36339 11.9198 3.38185C11.9296 3.39569 11.9429 3.40781 11.951 3.42281C11.9642 3.44589 11.9717 3.47012 11.981 3.49435C11.9856 3.50762 11.9937 3.51973 11.9971 3.53358C12.0077 3.57289 12.0132 3.61343 12.0133 3.65416V15.5151L16.6333 12.8549V6.79146C16.6333 6.75108 16.639 6.71012 16.6494 6.67146C16.6535 6.65762 16.661 6.6455 16.6656 6.63223C16.6748 6.608 16.6829 6.58319 16.6956 6.56069C16.7042 6.54569 16.7169 6.53358 16.7267 6.51973C16.7406 6.50127 16.7521 6.48223 16.7683 6.46608C16.7815 6.45281 16.7983 6.443 16.8133 6.43146C16.8306 6.41762 16.8456 6.40262 16.864 6.39166L22.4094 3.19954C22.4796 3.15909 22.5592 3.1378 22.6402 3.1378C22.7212 3.1378 22.8008 3.15909 22.871 3.19954L28.4152 6.39166C28.4348 6.4032 28.4498 6.41762 28.4671 6.43089C28.4815 6.44243 28.4983 6.45281 28.5115 6.4655C28.5277 6.48223 28.5392 6.50127 28.5531 6.51973C28.5635 6.53358 28.5762 6.54569 28.5842 6.56069C28.5975 6.58319 28.605 6.608 28.6142 6.63223C28.6194 6.6455 28.6269 6.65762 28.6304 6.67146ZM27.7223 12.8549V7.59108L25.7821 8.708L23.1017 10.2513V15.5151L27.7229 12.8549H27.7223ZM22.1781 22.377V17.1097L19.5415 18.6155L12.0127 22.9124V28.2293L22.1781 22.377ZM0.924231 4.45319V22.377L11.0885 28.2288V22.913L5.77846 19.9078L5.77673 19.9067L5.77442 19.9055C5.75654 19.8951 5.74154 19.8801 5.72481 19.8674C5.71038 19.8559 5.69365 19.8467 5.68096 19.834L5.67981 19.8322C5.66481 19.8178 5.65442 19.7999 5.64173 19.7838C5.63019 19.7682 5.61635 19.7549 5.60712 19.7388L5.60654 19.737C5.59615 19.7197 5.58981 19.699 5.58231 19.6793C5.57481 19.662 5.565 19.6459 5.56038 19.6274C5.55462 19.6055 5.55346 19.5818 5.55115 19.5593C5.54885 19.542 5.54423 19.5247 5.54423 19.5074V19.5063V7.11339L2.86442 5.56954L0.924231 4.45319ZM6.00692 0.995118L1.3875 3.65416L6.00577 6.31319L10.6246 3.65358L6.00577 0.995118H6.00692ZM8.40923 17.5897L11.089 16.047V4.45319L9.14885 5.57012L6.46846 7.11339V18.7072L8.40923 17.5897ZM22.6402 4.133L18.0213 6.79204L22.6402 9.45108L27.2585 6.79146L22.6402 4.133ZM22.1781 10.2513L19.4977 8.708L17.5575 7.59108V12.8549L20.2373 14.3976L22.1781 15.5151V10.2513ZM11.55 22.1134L18.3248 18.2457L21.7113 16.313L17.096 13.6557L11.7819 16.7151L6.93865 19.5034L11.55 22.1134Z" fill="#FF2D20"/> </g> <defs> <clipPath id="clip0_1_2046"> <rect width="28.8462" height="30" fill="white"/> </clipPath> </defs> </svg>
+                        </div>
+
+                        <div class="technologies-list-box-content">
+                            <p>Laravel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technologies-list-box">
+                    <div class="technologies-list-box-inner">
+                        <div class="technologies-list-box-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path d="M354.9 61.1v384c0 42.9 29.8 67.1 61 67.1 29.1 0 61-20.2 61-67.1V63.9c0-39.4-29.1-63.9-61-63.9s-61 27-61 61.1M194.8 255.9V445c0 42.9 29.8 67.1 61 67.1 29.1 0 61-20.2 61-67.1V258.8c0-39.4-29.1-63.9-61-63.9s-61 27.3-61 61m-37.6 195.2c0 33.7-27.3 61-61 61s-61-27.3-61-61 27.3-61 61-61 61 26.9 61 61" style="fill:#fff"/></svg>
+                        </div>
+
+                        <div class="technologies-list-box-content">
+                            <p>Google Analytics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technologies-list-box">
+                    <div class="technologies-list-box-inner">
+                        <div class="technologies-list-box-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path d="M0 0h512v512H0z" style="fill:#f3f3f3"/><path d="M22.3 22.3h222.6v222.6H22.3z" style="fill:#f35325"/><path d="M267.1 22.3h222.6v222.6H267.1z" style="fill:#81bc06"/><path d="M22.3 267.1h222.6v222.6H22.3z" style="fill:#05a6f0"/><path d="M267.1 267.1h222.6v222.6H267.1z" style="fill:#ffba08"/></svg>
+                        </div>
+
+                        <div class="technologies-list-box-content">
+                            <p>Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technologies-list-box">
+                    <div class="technologies-list-box-inner">
+                        <div class="technologies-list-box-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 121.3 512.1 269.6"><path d="M458.1 229.1c-25.1 0-46.2-17.2-52.2-40.4h-61.8c-13.2 0-24.4 9.5-26.6 22.5l-2.2 13.3c-2 12.2-8.2 23.4-17.5 31.6 9.3 8.2 15.5 19.3 17.5 31.6l2.2 13.3c2.2 13 13.4 22.5 26.6 22.5h7.9c6-23.2 27.1-40.4 52.2-40.4 29.8 0 53.9 24.1 53.9 53.9s-24.1 53.9-53.9 53.9c-25.1 0-46.2-17.2-52.2-40.4h-7.9c-26.3 0-48.8-19-53.2-45l-2.2-13.3c-2.2-13-13.4-22.5-26.6-22.5h-21.4c-6 23.2-27.1 40.4-52.2 40.4s-46.2-17.2-52.2-40.4H106c-6 23.2-27.1 40.4-52.2 40.4C24.1 309.9 0 285.8 0 256s24.1-53.9 53.9-53.9c25.1 0 46.2 17.2 52.2 40.4h30.3c6-23.2 27.1-40.4 52.2-40.4s46.2 17.2 52.2 40.4h21.4c13.2 0 24.4-9.5 26.6-22.5l2.2-13.3c4.3-26 26.8-45 53.2-45H406c6-23.2 27.1-40.4 52.2-40.4 29.8 0 53.9 24.1 53.9 53.9s-24.2 53.9-54 53.9m0-27c14.9 0 26.9-12.1 26.9-26.9s-12.1-26.9-26.9-26.9-26.9 12.1-26.9 26.9 12 26.9 26.9 26.9M53.9 282.9c14.9 0 26.9-12.1 26.9-26.9s-12.1-26.9-26.9-26.9-27 12-27 26.9 12.1 26.9 27 26.9M215.6 256c0 14.9-12.1 26.9-26.9 26.9s-26.9-12.1-26.9-26.9 12.1-26.9 26.9-26.9 26.9 12 26.9 26.9m215.6 80.8c0 14.9-12.1 26.9-26.9 26.9-14.9 0-26.9-12.1-26.9-26.9s12.1-26.9 26.9-26.9 26.9 12.1 26.9 26.9" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"/></svg>
+                        </div>
+
+                        <div class="technologies-list-box-content">
+                            <p>n8n</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Key Features Section ===== -->
+
+    <section class="key-features-main-sec p-150">
+        <div class="container">
+            <div class="key-features-inner-sec">
+                <div class="title">
+                    <h2>What We Built</h2>
+                </div>
+            </div>
+
+            <div class="key-features-item-wrapper">
+                <div class="key-features-item">
+                    <div class="key-features-item-inner">
+                        <div class="key-features-item-icon">
+                            <svg width="800px" height="800px" viewBox="0 0 512 512" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>ai</title>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="icon" fill="#fff" transform="translate(64.000000, 64.000000)">
+                                        <path
+                                            d="M320,64 L320,320 L64,320 L64,64 L320,64 Z M171.749388,128 L146.817842,128 L99.4840387,256 L121.976629,256 L130.913039,230.977 L187.575039,230.977 L196.319607,256 L220.167172,256 L171.749388,128 Z M260.093778,128 L237.691519,128 L237.691519,256 L260.093778,256 L260.093778,128 Z M159.094727,149.47526 L181.409039,213.333 L137.135039,213.333 L159.094727,149.47526 Z M341.333333,256 L384,256 L384,298.666667 L341.333333,298.666667 L341.333333,256 Z M85.3333333,341.333333 L128,341.333333 L128,384 L85.3333333,384 L85.3333333,341.333333 Z M170.666667,341.333333 L213.333333,341.333333 L213.333333,384 L170.666667,384 L170.666667,341.333333 Z M85.3333333,0 L128,0 L128,42.6666667 L85.3333333,42.6666667 L85.3333333,0 Z M256,341.333333 L298.666667,341.333333 L298.666667,384 L256,384 L256,341.333333 Z M170.666667,0 L213.333333,0 L213.333333,42.6666667 L170.666667,42.6666667 L170.666667,0 Z M256,0 L298.666667,0 L298.666667,42.6666667 L256,42.6666667 L256,0 Z M341.333333,170.666667 L384,170.666667 L384,213.333333 L341.333333,213.333333 L341.333333,170.666667 Z M0,256 L42.6666667,256 L42.6666667,298.666667 L0,298.666667 L0,256 Z M341.333333,85.3333333 L384,85.3333333 L384,128 L341.333333,128 L341.333333,85.3333333 Z M0,170.666667 L42.6666667,170.666667 L42.6666667,213.333333 L0,213.333333 L0,170.666667 Z M0,85.3333333 L42.6666667,85.3333333 L42.6666667,128 L0,128 L0,85.3333333 Z"
+                                            id="Combined-Shape"> </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="key-features-item-content">
+                            <h3>Data Layer — Google BigQuery</h3>
+                            <p>Five structured datasets: Raw (exact API responses, never modified), Core (cleaned, deduplicated, standardised with tenant IDs), Reporting (pre-aggregated daily views by campaign, keyword, product), Config (one row per client), and Logs (full pipeline audit trail).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-features-item">
+                    <div class="key-features-item-inner">
+                        <div class="key-features-item-icon">
+                            <svg width="800px" height="800px" viewBox="0 -41 1106 1106" fill="#fff" class="icon"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1106.880694 384.277657L745.787419 0h-109.535792l73.440347 83.29718 204.633406 217.683297H387.470716l508.94577 639.722343 61.084599 83.29718h111.618221L560.173536 384.277657h546.707158zM752.173536 242.950108L637.223427 83.29718l-60.251627-83.29718h-102.316702l114.950108 159.652928H204.494577L0 1024h83.991323l21.240781-83.29718 165.206074-697.752712h481.735358zM735.652928 923.210412l-41.64859-16.659436a180.477223 180.477223 0 0 0-128.555314 0l-41.64859 16.659436a98.707158 98.707158 0 0 1-66.08243 0l-41.64859-16.659436a180.477223 180.477223 0 0 0-128.555314 0l-53.86551 21.796096a41.64859 41.64859 0 1 0 31.236443 77.18872l53.865509-21.796096a98.707158 98.707158 0 0 1 66.08243 0l41.64859 16.659436a180.477223 180.477223 0 0 0 128.555314 0l41.64859-16.659436a98.707158 98.707158 0 0 1 66.08243 0l41.64859 16.659436a41.64859 41.64859 0 1 0 31.236442-77.18872zM470.906725 764.112798l-41.648591-14.715835a197.691974 197.691974 0 0 0-124.94577 0l-53.865509 19.29718a41.64859 41.64859 0 1 0 27.765726 78.438178l53.86551-19.29718a116.060738 116.060738 0 0 1 69.414317 0l41.64859 14.715835a197.414317 197.414317 0 0 0 124.94577 0l41.64859-14.715835a84.546638 84.546638 0 0 1 13.882863-3.609544 41.64859 41.64859 0 0 0-13.882863-82.047723 168.954447 168.954447 0 0 0-27.765727 7.219089l-41.64859 14.715835a115.78308 115.78308 0 0 1-69.414316 0zM518.663774 603.904555a107.592191 107.592191 0 0 1-59.140997 0l-36.095445-11.800434a190.056399 190.056399 0 0 0-111.062907 0l-47.062907 15.409979a41.64859 41.64859 0 0 0 25.960955 79.132321l47.062907-15.409978a107.592191 107.592191 0 0 1 59.140997 0l36.095445 11.800433a189.778742 189.778742 0 0 0 111.062907 0 41.64859 41.64859 0 0 0-25.960955-79.132321zM401.770065 442.308026h-109.535792a41.64859 41.64859 0 0 0 0 83.29718h109.535792a41.64859 41.64859 0 1 0 0-83.29718z" />
+                            </svg>
+                        </div>
+
+                        <div class="key-features-item-content">
+                            <h3>Pipeline Layer — n8n Automation</h3>
+                            <p>8+ automated workflows handling scheduled sync, idempotent upserts, 12-month historical backfill on setup, data quality checks (missing values, duplicates, anomalies), and full error logging per run. Shopify syncs every 1–3 hours; Ads, GA4, and Clarity sync daily.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-features-item">
+                    <div class="key-features-item-inner">
+                        <div class="key-features-item-icon">
+                            <svg fill="#fff" height="800px" width="800px" version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 425.521 425.521" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M317.233,94.552l4.794-9.228c0.273-0.06,0.549-0.106,0.818-0.191c2.402-0.76,4.404-2.442,5.565-4.678l16.597-31.944 c2.419-4.656,0.606-10.391-4.05-12.81l-31.86-16.553c-2.235-1.162-4.842-1.387-7.244-0.628c-2.402,0.76-4.404,2.442-5.565,4.678 l-16.597,31.944c-1.353,2.604-1.38,5.544-0.329,8.054l-4.744,9.131c-10.808-3.918-22.088-6.841-33.732-8.655v-8.673h8.623 c5.247,0,9.5-4.253,9.5-9.5V9.5c0-5.247-4.253-9.5-9.5-9.5h-73.497c-5.247,0-9.5,4.253-9.5,9.5v35.999c0,5.247,4.253,9.5,9.5,9.5 h8.624v8.673C97.581,77.233,30.749,152.711,30.749,243.509c0,100.362,81.65,182.012,182.012,182.012s182.012-81.65,182.012-182.012 C394.773,181.993,364.091,127.514,317.233,94.552z M308.767,40.387l15.001,7.793l-7.837,15.084l-15.001-7.793L308.767,40.387z M295.206,73.909l8.929,4.639l-3.048,5.867c-2.926-1.631-5.897-3.188-8.919-4.66L295.206,73.909z M185.512,19h54.497v16.999 h-54.497V19z M203.636,54.999h18.25v6.727c-3.023-0.15-6.065-0.229-9.125-0.229c-3.06,0-6.101,0.079-9.125,0.229V54.999z M212.76,406.521c-89.885,0-163.012-73.127-163.012-163.012S122.876,80.497,212.76,80.497c89.885,0,163.012,73.127,163.012,163.012 S302.646,406.521,212.76,406.521z" />
+                                    <path
+                                        d="M212.76,98.783c-79.802,0-144.726,64.924-144.726,144.727s64.924,144.727,144.726,144.727 c79.803,0,144.727-64.924,144.727-144.727S292.564,98.783,212.76,98.783z M212.76,369.236 c-69.326,0-125.726-56.401-125.726-125.727s56.4-125.727,125.726-125.727s125.727,56.401,125.727,125.727 S282.086,369.236,212.76,369.236z" />
+                                    <path
+                                        d="M235.385,155.2v-16.706c0-5.247-4.253-9.5-9.5-9.5s-9.5,4.253-9.5,9.5v14.922h-7.249v-14.922c0-5.247-4.253-9.5-9.5-9.5 s-9.5,4.253-9.5,9.5V155.2c-15.731,4.954-27.172,19.677-27.172,37.023v21.98c0,17.346,11.441,32.068,27.172,37.023v59.565 c-4.942-3.605-8.172-9.423-8.172-15.994c0-5.247-4.253-9.5-9.5-9.5s-9.5,4.253-9.5,9.5c0,17.346,11.441,32.068,27.172,37.023 v16.706c0,5.247,4.253,9.5,9.5,9.5s9.5-4.253,9.5-9.5v-14.922h7.249v14.922c0,5.247,4.253,9.5,9.5,9.5s9.5-4.253,9.5-9.5v-16.706 c15.732-4.954,27.173-19.677,27.173-37.023v-21.98c0-17.346-11.441-32.069-27.173-37.023v-59.565 c4.942,3.605,8.173,9.423,8.173,15.995v12.211c0,5.247,4.253,9.5,9.5,9.5s9.5-4.253,9.5-9.5v-12.211 C262.558,174.876,251.117,160.154,235.385,155.2z M216.385,172.416v61.593h-7.249v-61.593H216.385z M181.964,214.203v-21.98 c0-6.572,3.23-12.389,8.172-15.994v53.969C185.194,226.592,181.964,220.774,181.964,214.203z M209.136,314.603v-61.593h7.249 v61.593H209.136z M243.558,272.816v21.98c0,6.572-3.23,12.39-8.173,15.995v-53.97C240.327,260.426,243.558,266.244,243.558,272.816 z" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="key-features-item-content">
+                            <h3>Dashboard Layer — Laravel</h3>
+                            <p>Real-time reporting UI showing revenue by campaign, ROAS by ad group, GA4 funnel performance (sessions → add_to_cart → checkout → purchase), and Microsoft Clarity UX signals (scroll depth, rage clicks, quick backs) — all in one interface with up to 1-hour data freshness.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-features-item">
+                    <div class="key-features-item-inner">
+                        <div class="key-features-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                <path fill="#fff"
+                                    d="M192 144C222.9 144 248 118.9 248 88C248 57.1 222.9 32 192 32C161.1 32 136 57.1 136 88C136 118.9 161.1 144 192 144zM176 576L176 416C176 407.2 183.2 400 192 400C200.8 400 208 407.2 208 416L208 576C208 593.7 222.3 608 240 608C257.7 608 272 593.7 272 576L272 240L400 240C417.7 240 432 225.7 432 208C432 190.3 417.7 176 400 176L384 176L384 128L576 128L576 320L384 320L384 288L320 288L320 336C320 362.5 341.5 384 368 384L592 384C618.5 384 640 362.5 640 336L640 112C640 85.5 618.5 64 592 64L368 64C341.5 64 320 85.5 320 112L320 176L197.3 176C151.7 176 108.8 197.6 81.7 234.2L14.3 324.9C3.8 339.1 6.7 359.1 20.9 369.7C35.1 380.3 55.1 377.3 65.7 363.1L112 300.7L112 576C112 593.7 126.3 608 144 608C161.7 608 176 593.7 176 576z" />
+                            </svg>
+                        </div>
+
+                        <div class="key-features-item-content">
+                            <h3>Config Layer — Managed Entities</h3>
+                            <p>A single managed_entities table drives the entire system: timezone, currency, API credentials, active status, and all tenant IDs in one row per company. New client onboarding requires one INSERT — the pipelines, transforms, and dashboard configure themselves automatically.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-features-item">
+                    <div class="key-features-item-inner">
+                        <div class="key-features-item-icon">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                id="secure" class="icon glyph">
+                                <path
+                                    d="M19.42,3.83,12.24,2h0A.67.67,0,0,0,12,2a.67.67,0,0,0-.2,0h0L4.58,3.83A2,2,0,0,0,3.07,5.92l.42,5.51a12,12,0,0,0,7.24,10.11l.88.38h0a.91.91,0,0,0,.7,0h0l.88-.38a12,12,0,0,0,7.24-10.11l.42-5.51A2,2,0,0,0,19.42,3.83ZM15.71,9.71l-4,4a1,1,0,0,1-1.42,0l-2-2a1,1,0,0,1,1.42-1.42L11,11.59l3.29-3.3a1,1,0,0,1,1.42,1.42Z"
+                                    style="fill:#fff"></path>
+                            </svg>
+                        </div>
+
+                        <div class="key-features-item-content">
+                            <h3>AI Analysis Layer (Upcoming)</h3>
+                            <p>Claude will analyse patterns across the unified dataset — underperforming campaigns, wasted budget, growth opportunities — while OpenAI translates insights into executable actions. A Notion-based approval panel gives the client full review before any change goes live.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== Counter Section ===== -->
+
+    <section class="counter-main-sec bg-white p-t-150">
+        <div class="container">
+            <div class="counter-inner-sec">
+                <div class="title">
+                    <h2>Results & Impact</h2>
+                </div>
+
+                <div class="counter-listing-wrapper">
+                    <div class="counter-listing-item">
+                        <div class="counter-listing-item-inner">
+                            <h3 class="counter" data-target="4" data-suffix="" data-prefix="">4</h3>
+                            <p>Data Sources</p>
+                        </div>
+                    </div>
+
+                    <div class="counter-listing-item">
+                        <div class="counter-listing-item-inner">
+                            <h3 class="counter" data-target="5" data-suffix="">5</h3>
+                            <p>BigQuery Layers</p>
+                        </div>
+                    </div>
+
+                    <div class="counter-listing-item">
+                        <div class="counter-listing-item-inner">
+                            <h3 class="counter" data-target="8" data-suffix="+" data-prefix="">8+</h3>
+                            <p>Sync Pipelines</p>
+                        </div>
+                    </div>
+
+                    <div class="counter-listing-item">
+                        <div class="counter-listing-item-inner">
+                            <h3 class="counter" data-target="4" data-suffix="×" data-prefix="≥">≥4×</h3>
+                            <p>Target ROAS</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAT Section ===== -->
+
+    <section class="cta-main-sec">
+        <div class="container">
+            <div class="cta-inner-sec">
+                <div class="cta-title-col">
+                    <div class="cta-title-col-inner">
+                        <div class="title">
+                            <h2>Let’s Build the <span>Future with AI</span></h2>
+                            <p>Tell us about your project. We'll respond within 24 hours with a tailored proposal.</p>
+                        </div>
+
+                        <div class="cta-button-wrapper">
+                            <a href="../contact-us" class="actions-btn">
+                                <span>Start a Conversation</span>
+                                <span class="site-cta__arrow">
+                                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.353516 7.87629L4.35352 3.87629L0.353515 0.376289" stroke="white">
+                                        </path>
+                                        <path d="M5.85352 7.87629L9.85352 3.87629L5.85352 0.376289" stroke="white">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <a href="../portfolio" class="actions-btn btn-border">
+                                <span>View Portfolio</span>
+                                <span class="site-cta__arrow">
+                                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.353516 7.87629L4.35352 3.87629L0.353515 0.376289" stroke="white">
+                                        </path>
+                                        <path d="M5.85352 7.87629L9.85352 3.87629L5.85352 0.376289" stroke="white">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-arrow-col">
+                    <div class="cta-arrow-col-inner">
+                        <a href="javascript:;">
+                            <svg width="115" height="115" viewBox="0 0 115 115" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.30273 108.928L105.758 8.47266" stroke="black" stroke-width="15" />
+                                <path
+                                    d="M8.48438 7.504L106.229 7.5C106.505 7.5 106.729 7.7238 106.729 8L106.724 106.412"
+                                    stroke="black" stroke-width="15" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer Section ===== -->
+<footer class="footer-main">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-top-inner">
+                <div class="footer-logo-col">
+                    <div class="footer-logo">
+                        <a href="/">
+                            <img src="/assets/images/footer-logo.svg" alt="The Nova AI">
+                        </a>
+                    </div>
+
+                    <p>Elite AI engineering for the <br> businesses that shape tomorrow.</p>
+                    
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/company/cypherox-technologies" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.34715 3.00472C4.34715 3.8843 3.5847 4.59733 2.64428 4.59733C1.7038 4.59733 0.941406 3.8843 0.941406 3.00472C0.941406 2.12514 1.7038 1.41211 2.64428 1.41211C3.5847 1.41211 4.34715 2.12514 4.34715 3.00472Z" fill="white"/> <path d="M1.17383 5.76758H4.08468V14.5882H1.17383V5.76758Z" fill="white"/> <path d="M8.7722 5.76678H5.86133V14.5874H8.7722C8.7722 14.5874 8.7722 11.8105 8.7722 10.0744C8.7722 9.0322 9.12806 7.98551 10.5478 7.98551C12.1523 7.98551 12.1427 9.34928 12.1352 10.4058C12.1254 11.7868 12.1488 13.1962 12.1488 14.5874H15.0596V9.93206C15.035 6.95954 14.2604 5.58984 11.7122 5.58984C10.1988 5.58984 9.26076 6.2769 8.7722 6.89846V5.76678Z" fill="white"/> </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/cypheroxtech" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.1507 0H13.3231L8.57846 5.42154L14.16 12.8H9.79075L6.36615 8.32616L2.4523 12.8H0.276923L5.35077 7L0 0H4.48001L7.5723 4.08923L11.1507 0ZM10.3877 11.5015H11.5907L3.82461 1.23077H2.5323L10.3877 11.5015Z" fill="white"/> </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-menu-col">
+                    <div class="footer-menu-title">
+                        <h2>Services</h2>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="/llm-integration">LLM Integration</a>
+                        </li>
+                        <li>
+                            <a href="/ai-agent-development">AI Agents</a>
+                        </li>
+                        <li>
+                            <a href="/predictive-analytics">Predictive Analytics</a>
+                        </li>
+                        <li>
+                            <a href="/custom-model-training">Model Training</a>
+                        </li>
+                        <li>
+                            <a href="/ai-strategy-audit">AI Strategy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-col">
+                    <div class="footer-menu-title">
+                        <h2>Company</h2>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="/about-us">About</a>
+                        </li>
+                        <li>
+                            <a href="/portfolio/">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="/portfolio/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="schedule-demo-col">
+                    <div class="schedule-demo-col-inner">
+                        <h2>See what <br> The Nova AI can do <br> for your growth.</h2>
+                        <p>Schedule a tailored demo to see how our custom AI solutions and <br> expert team transform workflows, automate operations, and drive scalable <br> business growth.</p>
+                        <a href="/contact-us" class="actions-btn schedule-demo-btn">
+                            <span>Schedule a demo</span>
+                            <span class="site-cta__arrow">
+                                <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.353516 7.87629L4.35352 3.87629L0.353515 0.376289" stroke="white"></path>
+                                    <path d="M5.85352 7.87629L9.85352 3.87629L5.85352 0.376289" stroke="white"></path>
+                                </svg>
+                            </span>        
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <span>© 2026 The Nova AI. All rights reserved.</span>
+            <a href="/terms-conditions">Terms & Conditions</a>
+        </div>
+    </div>
+    <div class="footer-wrap">
+        <div class="footer-globe-img"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 776 776" fill="none" r-footer-globe="lines" class="footer_globe_lines"><g style="mix-blend-mode:lighten"><ellipse cx="382.622" cy="116.016" rx="382.622" ry="116.016" transform="matrix(1 0 0 -1 5.38281 504.016)" stroke="#F75D00"></ellipse></g><g style="mix-blend-mode:lighten"><ellipse cx="381.001" cy="116.086" rx="381.001" ry="116.086" transform="matrix(0.866025 -0.5 -0.5 -0.866025 116.086 679.033)" stroke="#F75D00"></ellipse></g><g style="mix-blend-mode:lighten"><ellipse cx="381.001" cy="116.086" rx="381.001" ry="116.086" transform="matrix(0.5 -0.866025 -0.866025 -0.5 298.023 775.998)" stroke="#F75D00"></ellipse></g><g style="mix-blend-mode:lighten"><ellipse cx="381.853" cy="115.248" rx="381.853" ry="115.248" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 503.25 769.854)" stroke="#F75D00"></ellipse></g><g style="mix-blend-mode:lighten"><ellipse cx="381.001" cy="116.086" rx="381.001" ry="116.086" transform="matrix(-0.5 -0.866025 -0.866025 0.5 679.031 659.914)" stroke="#F75D00"></ellipse></g><g style="mix-blend-mode:lighten"><ellipse cx="381.001" cy="116.086" rx="381.001" ry="116.086" transform="matrix(-0.866025 -0.5 -0.5 0.866025 776 477.969)" stroke="#F75D00"></ellipse></g></svg>
+    </div>
+</footer>
+
+    <!-- ===== Project Popup Section ===== -->
+
+<!-- ===== Schedule A Demo Popup Section ===== -->
+
+<!-- Include jQuery and Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.36/bundled/lenis.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="../assets/js/project-popup.js"></script>
+    <script src="../assets/js/schedule-demo-popup.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
+

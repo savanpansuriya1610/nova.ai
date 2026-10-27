@@ -1,0 +1,10 @@
+# robots.txt for https://www.thenovaai.com/
+# Generated for Nova AI - AI consulting & development agency
+
+User-agent: *
+Allow: /
+
+# Utility / non-content pages
+Disallow: /404
+
+Sitemap: https://www.thenovaai.com/sitemap.xml

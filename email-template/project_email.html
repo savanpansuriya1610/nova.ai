@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .email-wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border: 1px solid #333;
+        }
+        .header {
+            background-color: #0b0c10;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #ff6801;
+        }
+        .header img {
+            max-width: 200px;
+            height: auto;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .content h2 {
+            color: #ff6801;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .data-table th, .data-table td {
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+            vertical-align: top;
+        }
+        .data-table th {
+            text-align: left;
+            width: 35%;
+            color: #cccccc;
+            font-weight: bold;
+        }
+        .data-table td {
+            color: #ffffff;
+        }
+        .message-box {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 15px;
+            color: #dddddd;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b0c10;
+            color: #666666;
+            font-size: 12px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <div class="email-wrapper">
+                    <div class="header">
+                        <img src="{{BASE_URL}}/assets/images/logo.svg" alt="Nova AI">
+                    </div>
+                    <div class="content">
+                        <h2>New Project Request</h2>
+                        <p style="color: #dddddd;">A new user has submitted a request to start a project.</p>
+                        
+                        <table class="data-table">
+                            <tr>
+                                <th>Full Name</th>
+                                <td>{{FULL_NAME}}</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>{{EMAIL}}</td>
+                            </tr>
+                            <tr>
+                                <th>Project Name</th>
+                                <td>{{PROJECT_NAME}}</td>
+                            </tr>
+                            <tr>
+                                <th>Category</th>
+                                <td>{{CATEGORY}}</td>
+                            </tr>
+                            <tr>
+                                <th>Project Type</th>
+                                <td>{{PROJECT_TYPE}}</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2" style="border-bottom: none; padding-bottom: 0;">Description</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-bottom: none; padding-top: 5px;">
+                                    <div class="message-box">
+                                        {{DESCRIPTION}}
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="footer">
+                        &copy; 2026 The Nova AI. All rights reserved.
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

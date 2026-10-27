@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .email-wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border: 1px solid #2b2b2b;
+        }
+        .header {
+            background-color: #0b0c10;
+            padding: 24px 30px;
+            text-align: center;
+            border-bottom: 2px solid #ff6801;
+        }
+        .header img {
+            max-width: 180px;
+            height: auto;
+        }
+        .content {
+            padding: 30px 30px;
+        }
+        .content h2 {
+            color: #ff6801;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        .content p {
+            color: #d6d6d6;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        .cta {
+            display: inline-block;
+            background-color: #ff6801;
+            color: #0b0c10;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+        .footer {
+            text-align: center;
+            padding: 18px;
+            background-color: #0b0c10;
+            color: #666666;
+            font-size: 12px;
+            border-top: 1px solid #2b2b2b;
+        }
+        .small {
+            font-size: 12px;
+            color: #9b9b9b;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <div class="email-wrapper">
+                    <div class="header">
+                        <img src="{{BASE_URL}}/assets/images/logo.svg" alt="Nova AI">
+                    </div>
+                    <div class="content">
+                        <h2>Thank you, {{FULL_NAME}}!</h2>
+                        <p>We have received your project request and appreciate you reaching out to The Nova AI.</p>
+                        <p>Our team will review the information you provided and get back to you shortly with next steps and an estimated timeline.</p>
+                        <p>If you need immediate assistance, please reply to this email or visit <a href="{{BASE_URL}}" style="color:#ff6801; text-decoration:none;">our website</a>.</p>
+                        <a class="cta" href="{{BASE_URL}}">Visit The Nova AI</a>
+                        <p class="small">This is an automated message. Please do not reply to this address.</p>
+                    </div>
+                    <div class="footer">
+                        &copy; 2026 The Nova AI. All rights reserved.
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
